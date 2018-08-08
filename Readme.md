@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Sergey Gezha](https://up.htmlacademy.ru/htmlcss/22/user/190994).
-* Наставник: `Неизвестно`.
+* Наставник: [Артём Глуханько] (https://htmlacademy.ru/profile/v1z).
 
 ---
 
