@@ -19,7 +19,6 @@
     </nav>
   </header>
   <main>
-    <div class="background"></div>
     <section class="options">
       <div class="infrastructure">
         <h2>Инфраструктура</h2>
@@ -41,45 +40,60 @@
         <h2>Стоимость в сутки(Р):</h2>
         <span>от 0</span>
         <span>до 3000</span>
-        <button>Показать</button>
       </div>
+      <button>Показать</button>
     </section>
     <section class="hotels">
-      <div class="result-block">
-        <h3>Найдено:3</h3>
+      <div class="result">
+        <span>Найдено:3</span>
         <span>Сортировка:</span>
-        <ul>
-          <li>По цене</li>
-          <li>По типу</li>
-          <li>По рейтингу</li>
-        </ul>
+        <button>По цене</button>
+        <button>По типу</button>
+        <button>По рейтингу</button>
       </div>
       <div class="buttons">
-        <button>Вверх</button>
-        <button>Вниз</button>
+        <button>По убыванию</button>
+        <button>По возрастанию</button>
       </div>
-      <img src="img/amara.jpg" width="135" height="90" alt="Амара">
-      <div class="result-hotels">
-        <h1>Amara Resort&SPA</h1>
+    </section>
+    <ol class="hotels-list">
+      <li class="amara">
+        <img src="img/amara.jpg" width="135" height="90" alt="Амара">
+        <a href="#">Amara Resort&SPA</a>
         <span>Гостиница</span>
         <span>от 4000 р.</span>
         <span>Рейтинг:8,5</span>
-      </div>
-      <img src="img/quail.jpg" width="135" height="90" alt="Пустынная перепелка">
-      <div class="result-hotels">
-        <h1>Desert Quail INN</h1>
+        <button>Подробнее</button>
+        <button>Забронировать</button>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+      </li>
+      <li class="desert quail">
+        <img src="img/quail.jpg" width="135" height="90" alt="Пустынная перепелка">
+        <a href="#">Desert Quail INN</a>
         <span>Мотель</span>
         <span>от 3000 р.</span>
         <span>Рейтинг:8,9</span>
-      </div>
-      <img src="img/diablo.jpg" width="135" height="90" alt="Вилла дьявола">
-      <div class="result-hotels">
-        <h1>Villas at poco diablo</h1>
+        <button>Подробнее</button>
+        <button>Забронировать</button>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+      </li>
+      <li class="diablo">
+        <img src="img/diablo.jpg" width="135" height="90" alt="Вилла дьявола">
+        <a href="#">Villas at poco diablo</a>
         <span>Апартаменты</span>
         <span>от 2000 р.</span>
         <span>Рейтинг:9,2</span>
-      </div>
-    </section>
+        <button>Подробнее</button>
+        <button>Забронировать</button>
+        <div class="star"></div>
+        <div class="star"></div>
+      </li>
+    </ol>
   </main>
   <footer>
     <span class="footer-visit">#VISITSEDONA</span>
