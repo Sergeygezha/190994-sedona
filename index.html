@@ -14,7 +14,7 @@
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
         <li><a href="#">Карта штата</a></li>
-        <li><a href="#">Гостиницы</a></li>
+        <li><a href="hotels.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -35,7 +35,6 @@
         <li class="feature-item">
           <h3>Жильё</h3>
           <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-          <img src="img/lodging.svg" width="75" height="72" alt="Дом">
         </li>
         <li class="feature-item">
           <h3>Еда</h3>
@@ -72,9 +71,33 @@
     </section>
     <section class="sedona-order">
       <p>Заинтересовались? Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button>Поиск гостиницы в Седоне</button>
+      <a class="search" href="form.html">Поиск гостиницы в Седоне</a>
     </section>
-    <div class="map"></div>
+    <section class="map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map.jpg" width="1200" height="593" alt="Расположение городка Седона">
+      </p>
+      <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="date-in">
+          <label for="arrival">Дата заезда</label>
+          <input type="text" class="arrival-date" id="arrival" value="24 апреля 2017">
+        </div>
+        <div class="date-out">
+          <label for="departure">Дата выезда</label>
+          <input type="text" class="departure-date" id="departure" value="4 июля 2017">
+        </div>
+        <div class="adults">
+          <label for="adults">Взрослые</label>
+          <input type="text" class="grown" id="adults" value="2">
+        </div>
+        <div class="kids">
+          <label for="kids">Дети</label>
+          <input type="text" class="young" id="kids" value="0">
+        </div>
+        <input type="submit" value="Найти">
+      </form>
+    </section>
   </main>
   <footer>
     <span class="footer-visit">#VISITSEDONA</span>

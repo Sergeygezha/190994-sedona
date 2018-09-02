@@ -20,40 +20,83 @@
   </header>
   <main>
     <section class="options">
-      <div class="infrastructure">
-        <h2>Инфраструктура</h2>
-        <ul>
-          <li>Бассейн</li>
-          <li>Парковка</li>
-          <li>Wi-Fi</li>
-        </ul>
-      </div>
-      <div class="house-type">
-        <h2>Тип жилья</h2>
-        <ul>
-          <li>Гостиница</li>
-          <li>Мотель</li>
-          <li>Апартаменты</li>
-        </ul>
-      </div>
-      <div class="price">
-        <h2>Стоимость в сутки(Р):</h2>
-        <span>от 0</span>
-        <span>до 3000</span>
-      </div>
-      <button>Показать</button>
+      <form class="filter" method="post" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Инфраструктура</legend>
+          <ul>
+            <li>
+              <input class="visually-hidden filter-infrastructure" type="checkbox" id="pool" checked>
+              <label for="pool">Бассейн</label>
+            </li>
+            <li>
+              <input class="visually-hidden filter-infrastructure" type="checkbox" id="parking">
+              <label for="parking">Парковка</label>
+            </li>
+            <li>
+              <input class="visually-hidden filter-infrastructure" type="checkbox" id="network">
+              <label for="network">Wi-Fi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья</legend>
+          <ul>
+            <li>
+              <input class="visually-hidden filter-house" type="checkbox" id="hotel" checked>
+              <label for="hotel">Гостиница</label>
+            </li>
+            <li>
+              <input class="visually-hidden filter-house" type="checkbox" id="motel" checked>
+              <label for="motel">Мотель</label>
+            </li>
+            <li>
+              <input class="visually-hidden filter-house" type="checkbox" id="apartments" checked>
+              <label for="apartments">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <div class="price">
+          <div class="price-title">Стоимость в сутки(Р):</div>
+          <div class="price-from">
+            <label for="min">от</label>
+            <input class="min-price" type="text" id="min" value="0">
+          </div>
+          <div class="price-to">
+            <label for="max">до</label>
+            <input class="max-price" type="text" id="max" value="3000">
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+          <input class="btn-show" type="submit" value="Показать">
+        </div>
+      </form>
     </section>
     <section class="result">
-      <div class="sort">
+      <div class="found">
         <span>Найдено:3</span>
+      </div>
+      <div class="sort-list">
         <span>Сортировка:</span>
-        <button>По цене</button>
-        <button>По типу</button>
-        <button>По рейтингу</button>
+        <ul>
+          <li class="by-price">
+            <a href="#">По цене</a>
+          </li>
+          <li>
+            <a href=#>По типу</a>
+          </li>
+          <li>
+            <a href=#>По рейтингу</a>
+          </li>
+        </ul>
       </div>
       <div class="up-down">
-        <button>По убыванию</button>
-        <button>По возрастанию</button>
+        <a href="#">По убыванию</a>
+        <a class="up-button" href="#">По возрастанию</a>
       </div>
     </section>
     <section class="hotels-list">
@@ -65,11 +108,11 @@
             <div class="result-info">
               <div class="result-type">
                 <span>Гостиница</span>
-                <button>Подробнее</button>
+                <input class="info" type="submit" value="Подробнее">
               </div>
               <div class="result-price">
                 <span>от 4000 р.</span>
-                <button>Забронировать</button>
+                <input class="book" type="submit" value="Забронировать">
               </div>
             </div>
           </div>
@@ -90,11 +133,11 @@
             <div class="result-info">
               <div class="result-type">
                 <span>Мотель</span>
-                <button>Подробнее</button>
+                <input class="info" type="submit" value="Подробнее">
               </div>
               <div class="result-price">
                 <span>от 3000 р.</span>
-                <button>Забронировать</button>
+                <input class="book" type="submit" value="Забронировать">
               </div>
             </div>
           </div>
@@ -114,11 +157,11 @@
             <div class="relust-info">
               <div class="result-type">
                 <span>Апартаменты</span>
-                <button>Подробнее</button>
+                <input class="info" type="submit" value="Подробнее">
               </div>
               <div class="result-price">
                 <span>от 2000 р.</span>
-                <button>Забронировать</button>
+                <input class="book" type="submit" value="Забронировать">
               </div>
             </div>
           </div>
