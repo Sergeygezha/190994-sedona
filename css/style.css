@@ -17,9 +17,9 @@ a {
 .navigation-list,
 .features-list,
 .socials,
-.sort-list li,
+.sort-price,
 .result-list {
-  list-style:none;
+  list-style: none;
 }
 
 .main-navigation {
@@ -29,7 +29,8 @@ a {
   background-color: #ffffff;
 }
 
-.navigation-list a, footer a {
+.navigation-list,
+.footer-contacts  {
   color: #000000;
 }
 
@@ -41,11 +42,13 @@ a {
   color: #e1e1e1;
 }
 
-.reason-description, .reasons-description {
+.reason-description,
+.reasons-description {
   text-align: center;
 }
 
-.reasons h3, .found {
+.reasons-headline,
+.found {
   font-size: 21px;
   line-height: 26px;
 }
@@ -55,7 +58,8 @@ a {
   color: #ffffff;
 }
 
-.sedona-order, .find {
+.sedona-order,
+.find {
   font: inherit;
   text-align: center;
   text-transform: uppercase;
@@ -74,11 +78,17 @@ a {
   color: #ffffff;
 }
 
-.form-row input:hover {
+.arrival-date:hover,
+.departure-date:hover,
+.grown:hover,
+.young:hover {
   background-color: #ebebeb;
 }
 
-.form-row input:focus {
+.arrival-date:focus,
+.departure-date:focus,
+.grown:focus,
+.young:focus {
   background-color: #ffffff;
 }
 
@@ -108,15 +118,17 @@ a {
   background: #81b3d2
 }
 
-.social:hover, .find:hover {
+.social:hover,
+.find:hover {
   background-color: #669ec0;
 }
 
-.social:active, .find:active {
+.social:active,
+.find:active {
   background-color: #5496bd;
 }
 
-.button a {
+.button {
   background: url("../img/logo-htmlacademy.svg") no-repeat;
   background-size: 115px 100%;
   min-height: 41px;
@@ -124,19 +136,21 @@ a {
   color: #000000;
 }
 
-.button a:hover {
+.button:hover {
   color: #81b3d2
 }
 
-.button a:active {
+.button:active {
   color: #bdbbbc;
 }
 
-.filter-infrastructure, .filter-house {
+.filter-infrastructure,
+.filter-house {
   background-color: #ffffff;
 }
 
-.filter-infrastructure:disabled, .filter-house:disabled {
+.filter-infrastructure:disabled,
+.filter-house:disabled {
   background-color: 6a6a6a;
 }
 
@@ -144,11 +158,13 @@ a {
   background-color: transparent;
 }
 
-.range-toggle-min, .range-toggle-max {
+.range-toggle-min,
+.range-toggle-max {
   background-color: #ffffff;
 }
 
-.range-toggle-min:hover, .range-toggle-max:hover {
+.range-toggle-min:hover,
+.range-toggle-max:hover {
   background-color: #ffffff;
   background-size: 130%;
 }
@@ -164,78 +180,84 @@ a {
   color: #000000;
 }
 
-.sort-list a {
-  color: #cacaca;
+.by-price {
+  color: #81b3d2;
+  border-bottom:none;
+}
+
+.by-type,
+.by-rate {
+  color: #d2d2d2;
+  border-bottom: 1px dotted 81b3d2;
+}
+
+.by-type:hover,
+.by-rate:hover {
+  color: #a8c9df;
   border-bottom: 1px dotted #a8c9df;
 }
 
-.by-price a {
-  color: #a8c9df;
-  border-bottom: none;
-}
-
-.sort-list a:hover {
-  color: #a8c9df;
-  border-bottom: 1px dotted #a8c9df;
-}
-
-.sort-list a:active {
+.by-type:active,
+.by-rate:active {
   color: #000000;
   border-bottom: none;
 }
 
-.up-down a {
+.down-button,
+.up-button {
   color: #cacaca;
 }
 
-.down-button a {
+.down-button {
   color: #a8c9df;
 }
 
-.up-down a:hover {
+.down-button:hover,
+.up-button:hover {
   color: #000000;
 }
 
-.up-down a:active {
+.down-button:active,
+.up-button:active {
   color: #a8c9df;
 }
 
-.result-hotels a {
+.result-name {
   color: #000000;
 }
 
-.result-hotels a:hover {
+.result-name:hover {
   color: #81b3d2;
 }
 
-.result-hotels a:active {
+.result-name:active {
   color: #cacaca;
 }
 
-.info button {
+.info {
   color: #ffffff;
   background-color: #81b3d2;
 }
 
-.info button:hover {
+.info:hover {
   background-color: #669ec0;
 }
 
-.info button:active {
+.info:active {
   color: #94b9d2;
   background-color: #5496bd;
 }
 
-.book button {
+.book {
   color: #ffffff;
   background-color: #766357;
 }
 
-.book button:hover {
+.book:hover {
   background-color: #604e43;
 }
 
-.book button:active {
+.book:active {
   color: #928a85;
   background-color: #503e33;
 }
