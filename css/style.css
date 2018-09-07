@@ -105,15 +105,13 @@ a {
 }
 
 .social {
-  font-size: 0;
-  vertical-align: middle;
   width: 42px;
   height: 18px;
   margin-right: 6px;
   padding: 15px 2px;
   font-size: 20px;
-  line-height: 1em;
-  color: #fff;
+  line-height: 1.25;
+  color: #ffffff;
   text-decoration: none;
   background: #81b3d2
 }
@@ -151,7 +149,7 @@ a {
 
 .filter-infrastructure:disabled,
 .filter-house:disabled {
-  background-color: 6a6a6a;
+  background-color: #6a6a6a;
 }
 
 .price {
@@ -166,7 +164,7 @@ a {
 .range-toggle-min:hover,
 .range-toggle-max:hover {
   background-color: #ffffff;
-  background-size: 130%;
+  transform: scale(1.2);
 }
 
 .btn-show {
@@ -188,7 +186,7 @@ a {
 .by-type,
 .by-rate {
   color: #d2d2d2;
-  border-bottom: 1px dotted 81b3d2;
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .by-type:hover,
